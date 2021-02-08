@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+
+h1,
+h2,
+h3 {
+  color: rgb(239, 174, 171);
+  font-family: "Marck Script", cursive;
+}
