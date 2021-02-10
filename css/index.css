@@ -12,8 +12,12 @@ body {
   max-width: 980px;
   margin: auto;
   box-sizing: border-box;
+  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+}
 h1,
 h2,
 h3 {
@@ -29,11 +33,33 @@ h3 {
 header {
   display: block;
   margin: auto;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 25px 10px 25px;
 }
 .header-container-info {
   display: none;
 }
+.logo {
+  max-width: 100%;
+}
+/* STYLES MENU FOR BURGER */
+.main-menu {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+.menu-items {
+  list-style-type: none;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+.menu-items li {
+  margin: 20px 0 20px 0;
+}
+
+/* END STYLES MENU FOR BURGER */
 .banner-img {
   display: block;
   margin: auto;
@@ -51,12 +77,52 @@ header {
   font-weight: 400;
   line-height: 25px;
 }
+
+/* /////// START STYLES FOR BURGER /////// */
 .burger {
-  margin: 20px 0 0 20px;
-  border: 2px dotted var(--main-color);
-  width: 30px;
-  height: 30px;
+  display: block;
+  position: relative;
+  width: 35px;
+  height: 25px;
+  margin: 30px 0 0 15px;
 }
+.burger::before,
+.burger::after {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger span {
+  position: absolute;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  top: 11px;
+}
+.burger.active::before {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.burger.active::after {
+  transform: rotate(-45deg);
+  bottom: 10px;
+}
+.burger.active span {
+  transform: scale(0);
+}
+
+/* /////// END STYLES FOR BURGER /////// */
 
 .banner h1 {
   text-align: center;
@@ -96,7 +162,7 @@ header {
   border: 2px solid var(--main-color);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 815px) {
   /* ////// MENU STYLES ////// */
   .header-container-info {
     display: flex;
@@ -105,15 +171,21 @@ header {
   .burger {
     display: none;
   }
+  .main-menu {
+    position: static;
+    display: block;
+    top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+  }
+
   header nav .menu-items {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 20px 75px 10px 75px;
-  }
-  .main-menu {
-    padding: 5px 50px 5px 50px;
   }
 
   /* /////// BANNER AREA STYLES /////// */
