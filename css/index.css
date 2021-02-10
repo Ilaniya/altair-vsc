@@ -59,11 +59,17 @@ header {
   margin: 20px 0 20px 0;
 }
 
+.menu-items li:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
 /* END STYLES MENU FOR BURGER */
 .banner-img {
   display: block;
-  margin: auto;
-  width: 90%;
+  margin: 25px auto;
+  width: 100%;
 }
 .header-contacts p {
   margin: 0;
@@ -164,6 +170,9 @@ header {
 
 @media (min-width: 815px) {
   /* ////// MENU STYLES ////// */
+  header {
+    padding: 10px 0 15px 0;
+  }
   .header-container-info {
     display: flex;
     justify-content: space-between;
@@ -193,5 +202,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .container-banner-img {
+    margin: 0 15px 0 50px;
   }
 }
