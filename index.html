@@ -17,10 +17,10 @@
           <p>вул.Рубчака, 23</p>
         </div>
       </div>
-      <div class="burger">
+      <div id="header-burger" class="burger">
         <span></span>
       </div>
-      <nav class="main-menu">
+      <nav id="headerMenu" class="main-menu">
         <ul class="menu-items">
           <li>Напрямки</li>
           <li>Розклад</li>
@@ -367,6 +367,17 @@
         </div>
 
     </footer> -->
-    <script></script>
+
+    <script>
+      //дожидаемся полной загрузки страницы
+      window.onload = function () {
+        document.addEventListener("click", showBurgerMenu);
+
+        function showBurgerMenu() {
+          document.getElementById("header-burger").classList.toggle("active");
+          document.getElementById("headerMenu").classList.toggle("active");
+        }
+      };
+    </script>
   </body>
 </html>
