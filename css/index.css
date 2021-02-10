@@ -1,16 +1,125 @@
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --main-color: rgb(239, 174, 171);
+  --accent-color: rgb(255, 255, 255);
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  max-width: 980px;
+  margin: auto;
+  box-sizing: border-box;
+}
 
 h1,
 h2,
 h3 {
-  color: rgb(239, 174, 171);
+  color: var(--main-color);
   font-family: "Marck Script", cursive;
 }
 
-h1,
-h2 {
-  font-size: 80px;
-}
 h3 {
   font-size: 40px;
+}
+
+/* ////// HEADER STYLES /////// */
+header {
+  display: block;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+}
+.header-container-info {
+  display: none;
+}
+.banner-img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+.header-contacts p {
+  margin: 0;
+}
+.header-contacts {
+  padding: 35px 12px 0 0;
+}
+.header-contacts p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+.burger {
+  margin: 20px 0 0 20px;
+  border: 2px dotted var(--main-color);
+  width: 30px;
+  height: 30px;
+}
+
+.banner h1 {
+  text-align: center;
+  line-height: 85px;
+  font-size: 95px;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.btn-banner-trial-lesson {
+  display: block;
+  margin: auto;
+  width: 130px;
+  height: 35px;
+  border-radius: 34px;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.btn-banner-trial-lesson:hover {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+.btn-banner-trial-lesson:active {
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+@media (min-width: 800px) {
+  /* ////// MENU STYLES ////// */
+  .header-container-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger {
+    display: none;
+  }
+  header nav .menu-items {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 75px 10px 75px;
+  }
+  .main-menu {
+    padding: 5px 50px 5px 50px;
+  }
+
+  /* /////// BANNER AREA STYLES /////// */
+  .container-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
