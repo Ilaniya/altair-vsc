@@ -19,17 +19,20 @@ ul {
   padding: 0;
 }
 h1,
-h2,
-h3 {
+h2 {
   color: var(--main-color);
   font-family: "Marck Script", cursive;
 }
 
-h3 {
+h2 {
   font-size: 40px;
 }
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
 
-/* ////// HEADER STYLES /////// */
+/* //////  START HEADER STYLES /////// */
 header {
   display: block;
   margin: auto;
@@ -41,7 +44,7 @@ header {
 .logo {
   max-width: 100%;
 }
-/* ////// STYLES MENU FOR BURGER /////// */
+/* ///////  START STYLES MENU FOR BURGER  //////// */
 .main-menu {
   position: fixed;
   top: -100%;
@@ -79,7 +82,7 @@ header {
 .burger::before,
 .burger::after {
   content: "";
-  background-color: black;
+  background-color: var(--main-color);
   position: absolute;
   width: 100%;
   height: 3px;
@@ -93,7 +96,7 @@ header {
 }
 .burger span {
   position: absolute;
-  background-color: black;
+  background-color: var(--main-color);
   position: absolute;
   left: 0;
   width: 100%;
@@ -113,7 +116,7 @@ header {
 .burger.active span {
   transform: scale(0);
 }
-/* END STYLES MENU FOR BURGER */
+/* ////////   END STYLES MENU FOR BURGER  //////// */
 .banner-img {
   display: block;
   margin: 25px auto;
@@ -209,3 +212,63 @@ header {
     margin: 0 15px 0 50px;
   }
 }
+
+/* ////// START STUDIO DIRECTIONS SECTION STYLES /////// */
+.studio-directions h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.studio-directions {
+  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin: 5px;
+}
+.img-directions {
+  width: 100%;
+}
+.dance,
+.yoga,
+.stretching,
+.wedding-dance {
+  display: flex;
+  flex-flow: column;
+  margin: 5px;
+  padding: 10px;
+}
+
+.studio-directions p {
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.btn-directions {
+  width: 230px;
+  height: 40px;
+  color: var(--accent-color);
+  background-color: var(--main-color);
+  border-radius: 34px;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .dance,
+  .yoga,
+  .stretching,
+  .wedding-dance {
+    flex-wrap: nowrap;
+    flex-flow: row;
+    align-items: center;
+  }
+  .container-directions-items {
+    margin: 0 0 0 20px;
+    padding: 0 10px 0 10px;
+  }
+}
+/* ////// END STUDIO DIRECTIONS SECTION STYLES /////// */
