@@ -167,6 +167,7 @@ header {
   border: none;
   cursor: pointer;
   color: var(--accent-color);
+  margin-top: 15px;
 }
 
 .btn-banner-trial-lesson:hover {
@@ -231,7 +232,6 @@ header {
   background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: 50% 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,4 +330,27 @@ header {
   .advantages-item h3 {
     font-size: 40px;
   }
+}
+
+/* ////// START GALERY SECTION STYLES /////// */
+.container-galery h3 {
+  font-family: "Marck Script", cursive;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0 10px 0;
+}
+.container-galery p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.container-galery span {
+  color: var(--main-color);
+}
+.container-galery-img {
+  width: 100%;
+}
+.container-galery-img img {
+  width: 100%;
 }
