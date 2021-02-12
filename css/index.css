@@ -9,12 +9,20 @@
   font-family: "Roboto", sans-serif;
 }
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
   max-width: 980px;
   margin: auto;
-  box-sizing: border-box;
-  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
+  padding: 10px;
 }
-ul {
+ul,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -35,8 +43,8 @@ h3 {
 /* //////  START HEADER STYLES /////// */
 header {
   display: block;
-  margin: auto;
   padding: 10px 25px 10px 25px;
+  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
 }
 .header-container-info {
   display: none;
@@ -203,6 +211,7 @@ header {
   }
 
   /* /////// BANNER AREA STYLES /////// */
+
   .container-banner {
     display: flex;
     justify-content: space-between;
@@ -216,13 +225,13 @@ header {
 /* ////// START STUDIO DIRECTIONS SECTION STYLES /////// */
 .studio-directions h2 {
   text-align: center;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .studio-directions {
   background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -238,13 +247,13 @@ header {
 .wedding-dance {
   display: flex;
   flex-flow: column;
-  margin: 5px;
   padding: 10px;
 }
 
 .studio-directions p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 25.6px;
+  padding: 10px;
 }
 .btn-directions {
   width: 230px;
@@ -270,5 +279,55 @@ header {
     margin: 0 0 0 20px;
     padding: 0 10px 0 10px;
   }
+  .container-directions-img {
+    flex-basis: 700px;
+  }
+  .container-directions-items h3 {
+    margin: 5px;
+  }
+  .studio-directions p {
+    font-size: 16px;
+    padding: 10px;
+  }
 }
-/* ////// END STUDIO DIRECTIONS SECTION STYLES /////// */
+/* ////// START ADVANTAGES SECTION STYLES /////// */
+.advantages {
+  background-image: url("../img/belly-dance-cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+.advantages-item {
+  width: 70%;
+  background-color: var(--accent-color);
+  margin: 10px 10px 10px 10px;
+  padding: 15px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.container-advantages {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50vh;
+}
+.advantages-item h3 {
+  font-family: "Marck Script", cursive;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 30px;
+  line-height: 26.5px;
+  padding-bottom: 10px;
+}
+.advantages-item p {
+  text-align: center;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .advantages-item p {
+    font-size: 16px;
+  }
+  .advantages-item h3 {
+    font-size: 40px;
+  }
+}
