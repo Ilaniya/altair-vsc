@@ -296,6 +296,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
+  background-attachment: fixed;
 }
 .advantages-item {
   width: 70%;
@@ -363,10 +364,16 @@ header {
 }
 
 /* ////// START SCHEDULE SECTION STYLES /////// */
+.schedule {
+  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .schedule h2 {
   text-align: center;
   font-family: "Marck Script", cursive;
   color: var(--main-color);
+  margin: 35px 0 10px 0;
 }
 
 .container-schedule-items {
@@ -378,5 +385,33 @@ header {
 }
 .schedule-item {
   background: var(--accent-color);
-  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 15px;
+  margin: 10px;
+  min-width: 250px;
+  min-height: 300px;
+}
+.container-schedule-items h3 {
+  text-align: center;
+  color: var(--main-color);
+}
+.container-schedule-items td {
+  padding: 6px 7px 6px 10px;
+}
+table {
+  margin: 0 auto;
+  /* text-align: center; */
+}
+hr {
+  border: 1px solid black;
+}
+td,
+th {
+  padding: 50px;
+}
+@media (min-width: 650px) {
+  .container-schedule-items {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
 }
