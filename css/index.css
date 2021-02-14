@@ -409,9 +409,23 @@ td,
 th {
   padding: 50px;
 }
+
 @media (min-width: 650px) {
   .container-schedule-items {
     flex-flow: row;
     flex-wrap: wrap;
   }
+}
+
+/* ////// START SECTION ABOUT US STYLES /////// */
+.about-us {
+  background-image: url("//res2.weblium.site/res/5d64ddb76efffe00249ee60a/5db055ee05c91b00267f5f3d_optimized_1920");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-about-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
