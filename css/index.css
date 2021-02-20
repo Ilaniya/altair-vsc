@@ -238,8 +238,13 @@ header {
   flex-flow: column;
   margin: 5px;
 }
-.img-directions {
+.container-directions-img {
+  min-height: 150px;
+}
+.container-directions-img .img-directions {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .dance,
 .yoga,
@@ -468,8 +473,46 @@ th {
   background-size: cover;
 }
 .container-about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-us-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+.about-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.container-about-info h2 {
+  font-family: "Marck Script", cursive;
+  color: var(--main-color);
+  text-align: center;
+  margin: 30px 0 10px 0;
+}
+.container-about-info p {
+  font-size: 14px;
+  padding: 10px;
+  line-height: 25.6px;
+}
+.container-about-info span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.container-about-info i {
+  color: darkgrey;
+}
+
+@media (min-width: 650px) {
+  .about-us-container {
+    justify-content: space-between;
+    flex-flow: row;
+  }
+  .about-us-container {
+    padding: 30px 20px 15px 0;
+  }
 }
