@@ -292,14 +292,14 @@ header {
 }
 /* ////// START ADVANTAGES SECTION STYLES /////// */
 .advantages {
-  background-image: url("../img/belly-dance-cover.jpg");
+  background-image: url("../img/belly-dance_adventag.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
   background-attachment: fixed;
 }
 .advantages-item {
-  width: 70%;
+  width: 80%;
   background-color: var(--accent-color);
   margin: 10px 10px 10px 10px;
   padding: 15px;
@@ -325,11 +325,20 @@ header {
   font-size: 14px;
 }
 @media (min-width: 768px) {
+  .advantages-item {
+    width: 50%;
+    min-height: 120px;
+  }
   .advantages-item p {
     font-size: 16px;
+    margin: 10px;
   }
   .advantages-item h3 {
     font-size: 40px;
+    margin-top: 15px;
+  }
+  .container-advantages {
+    justify-content: flex-end;
   }
 }
 
@@ -345,14 +354,41 @@ header {
   font-size: 14px;
   margin-bottom: 20px;
 }
-.container-galery span {
+.container-galery a {
   color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
 }
 .container-galery-img {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
 }
 .container-galery-img img {
-  width: 100%;
+  width: 80%;
+}
+
+.container-galery-img i {
+  border: 1px solid var(--main-color);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin: 5px;
+  width: 8px;
+  height: 8px;
+  opacity: 0.7;
+}
+.container-galery-img p {
+  cursor: pointer;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 @media (min-width: 768px) {
   .container-galery p {
@@ -360,6 +396,11 @@ header {
   }
   .container-galery h2 {
     font-size: 40px;
+  }
+  .container-galery-img i {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
   }
 }
 
@@ -408,6 +449,9 @@ hr {
 td,
 th {
   padding: 50px;
+}
+.schedule-item td i {
+  font-size: 14px;
 }
 
 @media (min-width: 650px) {

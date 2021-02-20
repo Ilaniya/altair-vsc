@@ -142,11 +142,13 @@
           <div class="container-galery">
             <h2>Галерея</h2>
             <p>
-              Завітайте до нас в інстаграм <span>@altair_dance_studio</span>
+              Завітайте до нас в інстаграм <a src="">@altair_dance_studio</a>
             </p>
           </div>
           <div class="container-galery-img">
-            <img src="img/karysel.jpg" alt="Карусель" />
+            <p class="next"><i class="left"></i></p>
+            <img src="" alt="Галерея фото" class="currentImg" />
+            <p class="prev"><i class="right"></i></p>
           </div>
         </div>
       </section>
@@ -469,17 +471,7 @@
         </div>
 
     </footer> -->
-
-    <script>
-      //дожидаемся полной загрузки страницы
-      window.onload = function () {
-        document.addEventListener("click", showBurgerMenu);
-
-        function showBurgerMenu() {
-          document.getElementById("header-burger").classList.toggle("active");
-          document.getElementById("headerMenu").classList.toggle("active");
-        }
-      };
-    </script>
+    <script src="js/index.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>
