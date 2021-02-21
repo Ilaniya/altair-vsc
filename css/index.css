@@ -170,6 +170,10 @@ header {
   color: var(--accent-color);
   margin-top: 15px;
 }
+.btn-banner-trial-lesson:focus {
+  outline: none;
+}
+
 .btn-banner-trial-lesson:hover {
   background-color: var(--accent-color);
   color: var(--main-color);
@@ -268,6 +272,9 @@ header {
   cursor: pointer;
   border: none;
   text-transform: uppercase;
+}
+.btn-directions:focus {
+  outline: none;
 }
 .container-directions-items h3 {
   margin-top: 10px;
@@ -648,9 +655,78 @@ th {
   margin-top: 25px;
   color: var(--accent-color);
 }
+.btn-banner-trial-lesson:focus,
+input:focus {
+  outline: none;
+}
 @media (min-width: 768px) {
   .container-form {
     align-items: center;
     justify-content: flex-end;
+  }
+}
+
+/* ////// START FOOTER STYLES /////// */
+footer h2 {
+  text-align: center;
+  margin: 20px 10px 10px 10px;
+  font-family: "Marck Script", cursive;
+}
+iframe {
+  display: block;
+  border: 10px solid #fcd8d6;
+  max-width: 550px;
+  min-height: 350px;
+  margin: 15px;
+  flex: 2;
+}
+.container-map-contacts {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.container-contacts {
+  text-align: left;
+  padding: 20px;
+}
+.container-contacts span {
+  padding: 0;
+  font-family: "Marck Script", cursive;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+.container-contacts h4 {
+  margin: 15px 0 0 0;
+  padding: 0;
+  color: var(--main-color);
+}
+.container-footer-logo img {
+  display: block;
+  margin: 0 auto;
+}
+.container-footer-logo p,
+.container-footer-social-networks p {
+  text-align: center;
+}
+.container-footer-social-networks p {
+  margin-top: 20px;
+}
+.social-icons a {
+  width: 20px;
+  height: 20px;
+}
+.container-footer-social-networks ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  .container-map-contacts {
+    flex-flow: row;
+    align-items: center;
   }
 }
