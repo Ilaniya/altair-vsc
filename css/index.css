@@ -613,7 +613,7 @@ th {
   background-image: url("../img/form-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60vh;
+  /* height: 60vh; */
   background-attachment: fixed;
 }
 .container-form {
